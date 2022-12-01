@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className="flex justify-between items-center p-2 bg-slate-900">
       <Logo />
-      <MenuNav />
+      {/* <MenuNav /> */}
     </nav>
   );
 }

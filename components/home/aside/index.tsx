@@ -9,18 +9,6 @@ const menu = [
     color: "text-blue-900",
     icon: <AiFillHome />,
   },
-  {
-    title: "Gráficos",
-    bgColor: "bg-blue-200",
-    color: "text-blue-900",
-    icon: <AiFillSignal />,
-  },
-  {
-    title: "Campeonatos",
-    bgColor: "bg-blue-200",
-    color: "text-blue-900",
-    icon: <AiFillTrophy />,
-  },
 ];
 
 export default function Aside() {

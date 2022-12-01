@@ -1,9 +1,9 @@
 import { useMutation, useQuery } from "react-query";
+import { getApod } from "../src/services/nasa/nasa";
 import Aside from "../components/home/aside";
 import Footer from "../components/home/footer";
 import Nav from "../components/home/nav";
 import Section from "../components/home/section";
-import { getApod } from "../src/services/nasa/nasa";
 
 interface IApod {
   copyright: string;

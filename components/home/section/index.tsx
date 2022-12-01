@@ -19,13 +19,18 @@ export default function Section() {
   );
 
   return (
-    <section
-      className="flex flex-col-reverse bg-center bg-fixed bg-cover h-full rounded-xl"
-      style={{ backgroundImage: `url(${data?.url})` }}
-    >
-      <div className="p-2 bg-slate-900 rounded-bl-xl rounded-br-xl bg-opacity-50 text-white">
-        INFOS
-      </div>
-    </section>
+    <div className="h-full bg-slate-900 rounded-xl">
+      <image
+        className="flex flex-col justify-between bg-contain bg-center sm:bg-center md:bg-center lg:bg-center bg-no-repeat h-full rounded-xl"
+        style={{ backgroundImage: `url(${data?.url})` }}
+      >
+        <div className="p-2 bg-slate-900 rounded-tl-xl rounded-tr-xl bg-opacity-80 text-white">
+          {data?.title}
+        </div>
+        <div className="p-2 bg-slate-900 rounded-bl-xl rounded-br-xl bg-opacity-80 text-white">
+          {data?.explanation}
+        </div>
+      </image>
+    </div>
   );
 }
